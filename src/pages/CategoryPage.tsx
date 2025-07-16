@@ -13,15 +13,16 @@ const CategoryPage = () => {
   const [itemsToShow, setItemsToShow] = useState<number>(12);
   
   // Map category IDs to their display names
-  const categoryNames: Record<string, string> = {
-    men: 'Men',
-    women: 'Women',
-    kids: 'Kids',
-    accessories: 'Accessories'
+  const categoryNames: Record<string, { name: string; bg: string }> = {
+    men: { name: 'Men', bg: '/menbg.jpeg' },
+    women: { name: 'Women', bg: '/womenbg.jpeg' },
+    kids: { name: 'Kids', bg: '/kidsbg.webp' },
+    accessories: { name: 'Accessories', bg: '/accessoriesbg.webp' }
   };
-  
-  const categoryName = categoryNames[id || ''] || 'Category';
-  
+
+  const categoryName = categoryNames[id || '']?.name || 'Category';
+  const categoryBg = categoryNames[id || '']?.bg || '';
+
   const handleLoadMore = () => {
     setItemsToShow(prev => prev + 8);
   };
@@ -31,7 +32,7 @@ const CategoryPage = () => {
       <Navigation />
       <main className="flex-grow">
         {/* Category Header */}
-        <section className="bg-brand text-white py-12 md:py-16 lg:py-20">
+        <section className=" text-white py-12 md:py-16 lg:py-20" style={{ backgroundImage: `url(${categoryBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto px-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">{categoryName} Collection</h1>
             <p className="text-center mt-4 max-w-2xl mx-auto text-white/80">

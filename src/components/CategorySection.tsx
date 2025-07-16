@@ -15,25 +15,25 @@ const categories: Category[] = [
   {
     id: 'men',
     name: 'Men',
-    image: '/placeholder.svg',
+    image: '/men.webp',
     path: '/category/men'
   },
   {
     id: 'women',
     name: 'Women',
-    image: '/placeholder.svg',
+    image: '/women.jpg',
     path: '/category/women'
   },
   {
     id: 'kids',
     name: 'Kids',
-    image: '/placeholder.svg',
+    image: '/kids.webp',
     path: '/category/kids'
   },
   {
     id: 'accessories',
     name: 'Accessories',
-    image: '/placeholder.svg',
+    image: '/accessories.avif',
     path: '/category/accessories'
   }
 ];
@@ -62,7 +62,7 @@ const CategorySection = () => {
               <Link to={category.path} className="block">
                 <div 
                   className="h-64 bg-gray-200 rounded-lg overflow-hidden" 
-                  style={{ backgroundImage: `url(${category.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  style={{ backgroundImage: `url(${category.image})`, backgroundSize: 'cover', backgroundPosition: 'top' }}
                 >
                   <div className="category-overlay flex items-center justify-center h-full bg-black/40 hover:bg-black/50 transition-colors">
                     <span className="text-white text-xl font-bold px-6 py-3 border-2 border-white hover:bg-white hover:text-brand transition-colors">
@@ -79,7 +79,7 @@ const CategorySection = () => {
           ))}
         </div>
         
-        {/* Category Items */}
+        {/* Category Items
         <div className="mt-12">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-2xl font-bold text-brand">
@@ -93,7 +93,7 @@ const CategorySection = () => {
             </Link>
           </div>
           <CategoryItems categoryId={activeCategory} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

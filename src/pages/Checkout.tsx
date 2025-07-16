@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import react, { useState } from 'react';
 import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -110,7 +110,7 @@ const Checkout = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                   />
                 </div>
                 <div className="space-y-2">
@@ -122,7 +122,7 @@ const Checkout = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    placeholder="john@example.com"
+                    placeholder="example@example.com"
                   />
                 </div>
               </div>
@@ -140,7 +140,7 @@ const Checkout = () => {
                     value={formData.address}
                     onChange={handleInputChange}
                     required
-                    placeholder="123 Main St"
+                    placeholder="123 indore, IND"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -152,7 +152,7 @@ const Checkout = () => {
                       value={formData.city}
                       onChange={handleInputChange}
                       required
-                      placeholder="New York"
+                      placeholder="Indore"
                     />
                   </div>
                   <div className="space-y-2">
@@ -163,7 +163,7 @@ const Checkout = () => {
                       value={formData.zip}
                       onChange={handleInputChange}
                       required
-                      placeholder="10001"
+                      placeholder="456668"
                     />
                   </div>
                   <div className="space-y-2">
@@ -174,7 +174,7 @@ const Checkout = () => {
                       value={formData.country}
                       onChange={handleInputChange}
                       required
-                      placeholder="United States"
+                      placeholder="India"
                     />
                   </div>
                 </div>
@@ -229,7 +229,7 @@ const Checkout = () => {
                       value={formData.cardName}
                       onChange={handleInputChange}
                       required={paymentMethod === 'credit'}
-                      placeholder="John Doe"
+                      placeholder="Name"
                     />
                   </div>
                   <div className="space-y-2">
