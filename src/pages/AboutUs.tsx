@@ -102,22 +102,22 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  name: "Emma Johnson",
+                  name: "Sachin Patidar",
                   role: "Founder & Creative Director",
                   image: "/placeholder.svg",
-                  bio: "With over 15 years in fashion design, Emma's vision drives our creative direction."
+                  bio: "With over 15 years in fashion design, Sachin's vision drives our creative direction."
                 },
                 {
-                  name: "Michael Chen",
+                  name: "Muskan Chouhan",
                   role: "Head of Design",
                   image: "/placeholder.svg",
-                  bio: "Michael brings innovation and fresh perspectives to every collection."
+                  bio: "Muskan brings innovation and fresh perspectives to every collection."
                 },
                 {
-                  name: "Sophia Rodriguez",
+                  name: "Gopal PAtidar",
                   role: "Sustainability Officer",
                   image: "/placeholder.svg",
-                  bio: "Sophia ensures our commitment to ethical and sustainable practices."
+                  bio: "Gopal ensures our commitment to ethical and sustainable practices."
                 }
               ].map((member, index) => (
                 <div key={index} className="text-center">
