@@ -22,12 +22,12 @@ const AboutUs = () => {
         {/* Brand Story */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="flex flex-col md:flex-row gap-12 items-start justify-center">
               <div className="md:w-1/2">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/About/elegance.png" 
                   alt="Our Brand Story" 
-                  className="rounded-lg shadow-lg w-full h-auto object-cover"
+                  className="rounded-lg shadow-lg w-full min-h-80 "
                 />
               </div>
               <div className="md:w-1/2">
@@ -44,6 +44,20 @@ const AboutUs = () => {
                 <p className="text-brand-muted">
                   Today, we continue to innovate and inspire, creating collections that blend contemporary trends with 
                   classic elegance, ensuring that every piece in your wardrobe tells a story of quality and style.
+                </p>
+                <br/>
+                <p className="text-brand-muted mb-6">
+                 At Elegance, fashion is more than just clothing – it is a form of self-expression, individuality,
+                  and confidence. Each design is thoughtfully crafted to resonate with modern lifestyles, while maintaining 
+                  the sophistication and refinement that define our brand. From everyday essentials to statement pieces, 
+                  we create garments that adapt effortlessly to your world.
+                 </p>
+                 <br/>
+                <p className="text-brand-muted">
+                  As we look ahead, our mission remains clear: to build a future where fashion is inclusive,
+                   sustainable, and inspiring. With a growing community of customers who believe in our vision, 
+                   Elegance continues to redefine what it means to wear your confidence with pride. 
+                   We invite you to be part of this journey – to celebrate style, embrace quality, and step into a world of true elegance.
                 </p>
               </div>
             </div>

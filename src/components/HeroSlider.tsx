@@ -20,7 +20,7 @@ const slides: Slide[] = [
     id: 1,
     title: "Summer Collection 2025",
     description: "Discover our latest styles for the upcoming season",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=1920&q=80",
+    image: "/slider/",
     buttonText: "Shop Now",
     buttonLink: "/category/summer",
   },
@@ -28,7 +28,7 @@ const slides: Slide[] = [
     id: 2,
     title: "Exclusive Designer Pieces",
     description: "Limited edition items from our top designers",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80",
+    image: "/slider/",
     buttonText: "Explore",
     buttonLink: "/category/exclusive",
   },
@@ -36,7 +36,7 @@ const slides: Slide[] = [
     id: 3,
     title: "Sale Up To 50% Off",
     description: "Get amazing deals on our selected items",
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=1920&q=80",
+    image: "/slider/",
     buttonText: "View Sale",
     buttonLink: "/category/sale",
   }
@@ -60,7 +60,7 @@ const HeroSlider = () => {
       setIsLoading(false);
     }, 1000);
 
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(nextSlide, 2000);
     return () => {
       clearInterval(interval);
       clearTimeout(loadingTimer);
@@ -99,14 +99,14 @@ const HeroSlider = () => {
       {/* Navigation Buttons */}
       <button 
         onClick={prevSlide} 
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 text-brand transition-all"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 text-brand transition-all opacity-30"
         aria-label="Previous slide"
       >
         <ChevronLeft size={24} />
       </button>
       <button 
         onClick={nextSlide} 
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 text-brand transition-all"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 text-brand transition-all opacity-30"
         aria-label="Next slide"
       >
         <ChevronRight size={24} />
