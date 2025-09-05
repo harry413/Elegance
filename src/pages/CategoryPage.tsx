@@ -32,7 +32,7 @@ const CategoryPage = () => {
       <Navigation />
       <main className="flex-grow">
         {/* Category Header */}
-        <section className=" text-white py-12 md:py-16 lg:py-20 bg-blend-dark" style={{ backgroundImage: `url(${categoryBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section className=" text-white py-12 md:py-16 lg:py-20 bg-brightness-70" style={{ backgroundImage: `url(${categoryBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto px-4 ">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">{categoryName} Collection</h1>
             <p className="text-center mt-4 max-w-2xl mx-auto text-white/80">

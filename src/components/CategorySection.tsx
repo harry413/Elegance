@@ -15,25 +15,25 @@ const categories: Category[] = [
   {
     id: 'men',
     name: 'Men',
-    image: '/men.webp',
+    image: '/Men/men.webp',
     path: '/category/men'
   },
   {
     id: 'women',
     name: 'Women',
-    image: '/women.jpg',
+    image: '/Women/women.jpg',
     path: '/category/women'
   },
   {
     id: 'kids',
     name: 'Kids',
-    image: '/kids.webp',
+    image: '/Kids/kids.webp',
     path: '/category/kids'
   },
   {
     id: 'accessories',
     name: 'Accessories',
-    image: '/accessories.avif',
+    image: '/Accessories/accessories.avif',
     path: '/category/accessories'
   }
 ];
